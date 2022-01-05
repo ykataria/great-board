@@ -1,1 +1,12 @@
-#Add the project dependencies to this file
+anyio==3.4.0
+fastapi==0.70.1
+greenlet==1.1.2
+idna==3.3
+pydantic==1.9.0
+sniffio==1.2.0
+SQLAlchemy==1.4.29
+starlette==0.16.0
+typing_extensions==4.0.1
+loguru==0.5.3
+pydantic-sqlalchemy==0.0.9
+tabulate==0.8.9

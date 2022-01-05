@@ -43,9 +43,10 @@ class ProjectBoardBase:
         """
         :param request: A json string with the task details. Task is assigned to a user_id who works on the task
         {
-            "title" : "<board_name>",
+            "title" : "<task_name>",
             "description" : "<description>",
-            "user_id" : "<team id>"
+            "board_id": "<board_id>"
+            "user_id" : "<user_id>"
             "creation_time" : "<date:time when task was created>"
         }
         :return: A json string with the response {"id" : "<task_id>"}
@@ -83,7 +84,9 @@ class ProjectBoardBase:
         [
           {
             "id" : "<board_id>",
-            "name" : "<board_name>"
+            "name" : "<board_name>",
+            "status": "<board_status>",
+            "tasks" : "[<task_id>]"
           }
         ]
         """
